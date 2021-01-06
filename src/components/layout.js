@@ -1,9 +1,13 @@
 import React from 'react';
+import Header from './header/header.js';
+import useStyles from '../mui-styles';
 
 export default function Layout({ children }) {
+  const classes = useStyles();
+
   return (
-    <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
-      <h1>this is my layout</h1>
+    <div className={classes.root}>
+      <Header />
       {children}
     </div>
   );
