@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>some index page text</h1>
+      <h1>An Unstyled Index page. Checkout the sidebar</h1>
     </Layout>
   );
 };

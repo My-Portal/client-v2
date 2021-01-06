@@ -1,6 +1,23 @@
 import React from 'react';
 import Header from './header/header.js';
 import useStyles from '../mui-styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+
+function Copyright() {
+  return (
+    <Typography variant='body2' color='textSecondary' align='center'>
+      {'Copyright © '}
+      <Link color='inherit' href='https://material-ui.com/'>
+        Your Website
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 export default function Layout({ children }) {
   const classes = useStyles();
@@ -8,7 +25,15 @@ export default function Layout({ children }) {
   return (
     <div className={classes.root}>
       <Header />
-      {children}
+      <main className={classes.content}>
+        <div className={classes.appBarSpacer} />
+        <Container maxWidth='lg' className={classes.container}>
+          {children}
+          <Box pt={4}>
+            <Copyright />
+          </Box>
+        </Container>
+      </main>
     </div>
   );
 }
