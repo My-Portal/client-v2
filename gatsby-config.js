@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'material-ui portal',
+    siteUrl: 'localhost:8080',
   },
   plugins: [
     // {

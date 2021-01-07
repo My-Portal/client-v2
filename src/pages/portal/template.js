@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import Layout from '../../components/layout';
-
 import useStyles from '../../mui-styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';

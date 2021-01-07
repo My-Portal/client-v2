@@ -13,7 +13,7 @@ import { Link } from 'gatsby-theme-material-ui';
 export const mainListItems = (
   <div>
     <Link
-      to='/portal/dashboard'
+      to='/portal/dashboard/'
       style={{ textDecoration: 'none', color: 'black' }}
     >
       <ListItem button>
@@ -24,7 +24,7 @@ export const mainListItems = (
       </ListItem>
     </Link>
     <Link
-      to='/portal/template'
+      to='/portal/template/'
       style={{ textDecoration: 'none', color: 'black' }}
     >
       <ListItem button>
